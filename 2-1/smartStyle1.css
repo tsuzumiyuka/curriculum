@@ -1,0 +1,31 @@
+@media screen and (max-width: 767px){
+    .header{
+        width: 250px;
+    }
+    .right{
+        width: 100px;
+    }
+    .left{
+        width: 150px;
+    }
+    .footer{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 479px){
+    .header{
+        width: 150px;
+    }
+    .right{
+        width: 150px;
+        float: none;
+    }
+    .left{
+        width: 150px;
+        float: none;
+    }
+    .footer{
+        width: 150px;
+    }
+}
