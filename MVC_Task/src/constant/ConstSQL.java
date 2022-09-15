@@ -32,6 +32,6 @@ public final class ConstSQL {
     public static final String SELECT_BY_EMPID = "SELECT empid, password, name, mail, programinglanguage, comment FROM employee WHERE empid LIKE '?'";
 
     /** プリペアードステートメントで使用するクエリの条件値用プレースホルダー */
-    public static final String CONST_PLACEHOLDER_FOR_BIND_PARAM = "SELECT * FROM employee";
+    public static final String CONST_PLACEHOLDER_FOR_BIND_PARAM = "?";
 }
 

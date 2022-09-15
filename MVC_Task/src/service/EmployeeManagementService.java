@@ -71,7 +71,8 @@ public final class EmployeeManagementService extends BaseService implements Empl
         Logger.logStart(new Throwable());
         Logger.log(new Throwable(), "ExecuteCase = " + eCase.toString());
 
-        // jsp側での余計な判定回避ため、nullの可能性を潰す
+        // jsp側での余計な判定回避ため、nullの可能性を潰す（初期化）
+        // 右辺になんの型が入るかは指定されていない（<>で型の指定が出来るのに無い）
         List<EmployeeBean> empResultList = new ArrayList<>(0);
 
         try {
@@ -108,6 +109,13 @@ public final class EmployeeManagementService extends BaseService implements Empl
                         this.resultSet.getString("comment"));
 
                 // 社員情報リストへ追加
+                //【課題】引数で渡したいもの（社員情報）をどう追加するか
+                //このタイミングでaddメソッドを使用して追加するが、empResultListの型があっていない
+                //setEmplyeeBeanListメソッドを使えるデータ型にしないといけない→empResultListに合う型を用意する
+                //76行目にて何の型を持ってインスタンス化するかが書かれていないので、
+                //データ型の指示をつけてインスタンス化し直す
+                empResultList = new ArrayList<EmployeeBean>();
+
                 empResultList.add(employeeBean);
 
                 employeeBean = null;
@@ -138,6 +146,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
             }
 
             // レスポンスデータに社員情報、リクエストステータス、メッセージをセット
+            // この時点では社員情報があって、メソッドに対する型が合っている（引数）
             this.responseBean.setEmplyeeBeanList(empResultList);
             this.responseBean.setRequestStaus(this.reqStatus);
             this.responseBean.setMessage(this.reqMessage);
@@ -165,7 +174,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
             throws MVCException {
         Logger.logStart(new Throwable());
 
-        // クエリ構築用変数
+        // クエリ構築用変数(文字を含まず、容量引数で指定された初期容量を持つ文字列ビルダーを構築)
         // MEMO: 初期容量を指定しておくとパフォーマンスがよくなる
         StringBuilder sbQuery = new StringBuilder(ConstSQL.SELECT_BASE.length());
 
@@ -177,18 +186,21 @@ public final class EmployeeManagementService extends BaseService implements Empl
 
         try {
             // 「全件検索」以外の場合は、条件クエリを追加する
+        	// .append(指定された文字列をこの文字シーケンスに追加)
+        	// sbQueryを表す文字列を返すメソッドを
             switch (eCase) {
             case FIND_ALL:
                 sbQuery.append(ConstSQL.SELECT_BY_DELETE_FLG_ZERO);
                 this.resultSet = this.connection.createStatement().executeQuery(sbQuery.toString());
                 Logger.log(new Throwable(), "SQL: " +  sbQuery.toString());
                 break;
-            case FIND_BY_EMPID:
 
+            case FIND_BY_EMPID:
                 // FIXME Step-5-4: pEmployeeBeanListの「1件目の要素のみ」から社員情報を取得しなさい。
                 // Tips1: ループ文を使用すること（正解は複数パターンあります）
                 // Tips2: 格納先はローカル変数のempとすること
                 // [ここへ記述]
+            	this.resultSet = this.connection.createStatement().executeQuery(sbQuery.toString());
             	for (int i= 0; 1 > i; i++) {
             		emp = pEmployeeBeanList.get(i);
             	}
