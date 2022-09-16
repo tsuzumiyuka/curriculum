@@ -145,7 +145,7 @@ public final class EmployeeBean {
     }
 
     /**
-     * @param comment <pre>セットするStringクラスの社員番号</pre>
+     * @param comment <pre>セットするStringクラスのコメント</pre>
      */
     public void setComment(String comment) {
         this._comment = comment;
@@ -163,7 +163,7 @@ public final class EmployeeBean {
         this._deleteFlg = deleteFlg;
     }
 
-    /** @return String型の号コメント */
+    /** @return String型の削除フラグ */
     public String getDeleteFlg() {
         return _deleteFlg;
     }

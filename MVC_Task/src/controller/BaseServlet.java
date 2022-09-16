@@ -150,10 +150,16 @@ public abstract class BaseServlet extends HttpServlet {
             // Tips1: 社員情報管理サービスはインスタンスが生成済みのものを利用すること
             // Tips2: 完全一致検索の社員情報取得を呼び出すこと
             // Tips3: 第二引数の渡し方に注意すること
-            ems.getEmployeeData(ExecuteCase.FIND_BY_EMPID, resEmployeeBean);
+        	// ResponseBean型の値を、EmployeeBean型の変数に渡す
+        	responseBean = ems.getEmployeeData(ExecuteCase.FIND_BY_EMPID, resEmployeeBean);
 
             // 最初の1件を取得__
+            // レスポンスビーンクラスの社員情報データを取ってくるメソッド
+            // stream()：streamメソッドを呼び出して、リスト（ArrayList）から Stream<String> を生成する
+            // .findFirst().orElse(null)：findFirstで最初の要素を取得して、値が格納されている場合はその値を返し、
+            //	格納されていない場合は引数のnullを返す
             resEmployeeBean = responseBean.getEmplyeeBeanList().stream().findFirst().orElse(null);
+
 
             if (Objects.nonNull(resEmployeeBean)) {
                 // パスワードチェック
