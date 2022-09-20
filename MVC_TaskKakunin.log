@@ -1,74 +1,66 @@
-情報: Server version:        Apache Tomcat/9.0.10 [金 9月 16 14:17:17 JST 2022]
-情報: Server built:          Jun 20 2018 17:32:21 UTC [金 9月 16 14:17:17 JST 2022]
-情報: Server number:         9.0.10.0 [金 9月 16 14:17:17 JST 2022]
-情報: OS Name:               Windows 10 [金 9月 16 14:17:17 JST 2022]
-情報: OS Version:            10.0 [金 9月 16 14:17:17 JST 2022]
-情報: Architecture:          amd64 [金 9月 16 14:17:17 JST 2022]
-情報: Java Home:             C:\pleiades\java\10 [金 9月 16 14:17:17 JST 2022]
-情報: JVM Version:           10.0.1+10 [金 9月 16 14:17:17 JST 2022]
-情報: JVM Vendor:            "Oracle Corporation" [金 9月 16 14:17:17 JST 2022]
-情報: CATALINA_BASE:         C:\LetsEngineer\curriculum\.metadata\.plugins\org.eclipse.wst.server.core\tmp0 [金 9月 16 14:17:17 JST 2022]
-情報: CATALINA_HOME:         C:\pleiades\tomcat\9 [金 9月 16 14:17:17 JST 2022]
-情報: Command line argument: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:55290 [金 9月 16 14:17:17 JST 2022]
-情報: Command line argument: -javaagent:C:\pleiades\eclipse\configuration\org.eclipse.osgi\418\0\.cp\lib\javaagent-shaded.jar [金 9月 16 14:17:17 JST 2022]
-情報: Command line argument: -Dcatalina.base=C:\LetsEngineer\curriculum\.metadata\.plugins\org.eclipse.wst.server.core\tmp0 [金 9月 16 14:17:17 JST 2022]
-情報: Command line argument: -Dcatalina.home=C:\pleiades\tomcat\9 [金 9月 16 14:17:17 JST 2022]
-情報: Command line argument: -Dwtp.deploy=C:\LetsEngineer\curriculum\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps [金 9月 16 14:17:17 JST 2022]
-情報: Command line argument: -Dfile.encoding=UTF-8 [金 9月 16 14:17:17 JST 2022]
-情報: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\pleiades\java\10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/pleiades/eclipse/jre/bin/../jre/bin/server;C:/pleiades/eclipse/jre/bin/../jre/bin;C:/pleiades/eclipse/jre/bin/../jre/lib/amd64;C:\Program Files\Common Files\Oracle\Java\javapath;C:\eteam\java\jdk-11\bin;C:\Program Files\AdoptOpenJDK\jdk-11.0.9.101-hotspot\bin;C:\Program Files\Microsoft Office 15\AdoptOpenJDK\jdk-11.0.8.10-hotspot\bin;C:\WINDOWS\System32;C:\WINDOWS;C:\WINDOWS\System32\wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Zulu\zulu-11\bin\;C:\Program Files\PostgreSQL\13\bin;C:\Program Files\nodejs\;C:\Program Files\TortoiseSVN\bin;C:\eteam\PostgreSQL\11\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Nodist\bin;C:\WINDOWS\system32;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2\bin;C:\Program Files\Git\cmd;C:\Users\tsuzumi_yuka\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Salesforce CLI\bin;C:\Program Files\PostgreSQL\13\bin;C:\Users\tsuzumi_yuka\AppData\Roaming\npm;C:\Users\tsuzumi_yuka\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\tsuzumi_yuka\.dotnet\tools;C:\Program Files\IBM\Cloud\bin;C:\Users\tsuzumi_yuka\AppData\Local\GitHubDesktop\bin;C:\Users\tsuzumi_yuka\AppData\Local\Box\Box Edit\;C:\pleiades\eclipse;;.] [金 9月 16 14:17:17 JST 2022]
-情報: Initializing ProtocolHandler ["http-nio-8080"] [金 9月 16 14:17:17 JST 2022]
-情報: Using a shared selector for servlet write/read [金 9月 16 14:17:17 JST 2022]
-情報: Initializing ProtocolHandler ["ajp-nio-8009"] [金 9月 16 14:17:17 JST 2022]
-情報: Using a shared selector for servlet write/read [金 9月 16 14:17:17 JST 2022]
-情報: Initialization processed in 1020 ms [金 9月 16 14:17:17 JST 2022]
-情報: サービス [Catalina] を起動します [金 9月 16 14:17:18 JST 2022]
-情報: Starting Servlet Engine: Apache Tomcat/9.0.10 [金 9月 16 14:17:18 JST 2022]
-情報: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. [金 9月 16 14:17:18 JST 2022]
-警告: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [180] milliseconds. [金 9月 16 14:17:18 JST 2022]
-情報: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. [金 9月 16 14:17:19 JST 2022]
-情報: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. [金 9月 16 14:17:19 JST 2022]
-情報: Starting ProtocolHandler ["http-nio-8080"] [金 9月 16 14:17:19 JST 2022]
-情報: Starting ProtocolHandler ["ajp-nio-8009"] [金 9月 16 14:17:19 JST 2022]
-情報: Server startup in 1319 ms [金 9月 16 14:17:19 JST 2022]
-[MEMORY:46849776][2022/09/16 02:17:19.911] [org.apache.jsp.login_jsp] [_jspService] [161] セッションなし
-[MEMORY:48230720][2022/09/16 02:17:27.743] [controller.BaseServlet] [<init>] [56] START
-[MEMORY:48230720][2022/09/16 02:17:27.748] [controller.BaseServlet] [<init>] [60] END
-[MEMORY:48561136][2022/09/16 02:17:27.756] [controller.EmployeeManagementController] [doPost] [100] START
-[MEMORY:48561136][2022/09/16 02:17:27.757] [controller.EmployeeManagementController] [getRequestType] [198] START
-[MEMORY:48561136][2022/09/16 02:17:27.758] [controller.EmployeeManagementController] [getRequestType] [201] requestTypeName = login
-[MEMORY:48561136][2022/09/16 02:17:27.758] [controller.EmployeeManagementController] [getRequestType] [220] this.responseBean = bean.ResponseBean@34a3ba19
-[MEMORY:48561136][2022/09/16 02:17:27.759] [controller.EmployeeManagementController] [getRequestType] [230] END
-[MEMORY:48561136][2022/09/16 02:17:27.759] [controller.EmployeeManagementController] [doPost] [128] RequestType = LOGIN
-[MEMORY:48561136][2022/09/16 02:17:27.796] [service.BaseService] [<init>] [40] START
-[MEMORY:48561136][2022/09/16 02:17:27.796] [service.BaseService] [<init>] [47] END
-[MEMORY:48561136][2022/09/16 02:17:27.797] [controller.EmployeeManagementController] [lambda$1] [145] reqEmpId = 01520
-[MEMORY:48561136][2022/09/16 02:17:27.798] [controller.EmployeeManagementController] [doPost] [150] --- ログイン ---
-[MEMORY:48561136][2022/09/16 02:17:27.798] [controller.BaseServlet] [validateLogin] [137] START
-[MEMORY:48561136][2022/09/16 02:17:32.953] [service.EmployeeManagementService] [getEmployeeData] [54] START
-[MEMORY:48561136][2022/09/16 02:17:32.958] [service.EmployeeManagementService] [executeDBAccess] [71] START
-[MEMORY:48561136][2022/09/16 02:17:32.959] [service.EmployeeManagementService] [executeDBAccess] [72] ExecuteCase = FIND_BY_EMPID
-[MEMORY:48561136][2022/09/16 02:17:32.959] [service.BaseService] [executeGetConnection] [54] START
-[MEMORY:67786864][2022/09/16 02:17:33.438] [service.BaseService] [executeGetConnection] [80] END
-[MEMORY:67786864][2022/09/16 02:17:33.438] [service.EmployeeManagementService] [executeSelectQuery] [175] START
-[MEMORY:70337304][2022/09/16 02:17:34.557] [service.EmployeeManagementService] [executeSelectQuery] [254] END
-[MEMORY:70337304][2022/09/16 02:17:34.563] [service.EmployeeManagementService] [executeDBAccess] [90] meta = org.postgresql.jdbc.PgResultSetMetaData@33fd4ed7
-[MEMORY:70337304][2022/09/16 02:17:34.563] [service.EmployeeManagementService] [executeDBAccess] [97] empid: 01520
-[MEMORY:70337304][2022/09/16 02:17:34.563] [service.EmployeeManagementService] [executeDBAccess] [97] password: 0000
-[MEMORY:70337304][2022/09/16 02:17:34.563] [service.EmployeeManagementService] [executeDBAccess] [97] name: 皷侑香
-[MEMORY:70337304][2022/09/16 02:17:34.563] [service.EmployeeManagementService] [executeDBAccess] [97] mail: y-tsuzumi@tsrweb.co.jp
-[MEMORY:70337304][2022/09/16 02:17:34.563] [service.EmployeeManagementService] [executeDBAccess] [97] programinglanguage: java
-[MEMORY:70667632][2022/09/16 02:17:37.085] [service.EmployeeManagementService] [executeDBAccess] [129] reqStatus  = 0
-[MEMORY:70667632][2022/09/16 02:17:37.085] [service.EmployeeManagementService] [executeDBAccess] [130] reqMessage = 
-[MEMORY:70967024][2022/09/16 02:17:40.701] [service.BaseService] [executeCloseSQL] [118] START
-[MEMORY:70967024][2022/09/16 02:17:40.708] [service.BaseService] [executeCloseSQL] [129] END
-[MEMORY:70967024][2022/09/16 02:17:40.709] [service.EmployeeManagementService] [executeDBAccess] [161] END
-[MEMORY:70967024][2022/09/16 02:17:40.709] [service.EmployeeManagementService] [getEmployeeData] [58] END
-[MEMORY:71629760][2022/09/16 02:18:00.124] [util.PasswordHashUtil] [getSafetyPassword] [63] HASHED: db146e7d108952f05dd3270c89fffe1cf85dd436f386f83519f7f92128ac1ae3
-[MEMORY:71629760][2022/09/16 02:18:25.526] [controller.BaseServlet] [validateLogin] [195] isLoginError = true
-[MEMORY:71629760][2022/09/16 02:18:25.526] [controller.BaseServlet] [validateLogin] [197] END
-[MEMORY:71629760][2022/09/16 02:18:25.526] [controller.EmployeeManagementController] [doPost] [165] reqStatus  = 0
-[MEMORY:71629760][2022/09/16 02:18:25.527] [controller.EmployeeManagementController] [doPost] [166] reqMessage = パスワードに誤りがあります。
-[MEMORY:71629760][2022/09/16 02:18:25.528] [controller.EmployeeManagementController] [doPost] [174] 遷移先 = null
-[MEMORY:71629760][2022/09/16 02:18:25.529] [controller.EmployeeManagementController] [doPost] [187] END
-[MEMORY:71629760][2022/09/16 02:18:25.539] [org.apache.jsp.login_jsp] [_jspService] [167] セッションあり
-[MEMORY:71629760][2022/09/16 02:18:25.540] [org.apache.jsp.login_jsp] [_jspService] [188] message = パスワードに誤りがあります。
+情報: Server version:        Apache Tomcat/9.0.10 [火 9月 20 18:46:27 JST 2022]
+情報: Server built:          Jun 20 2018 17:32:21 UTC [火 9月 20 18:46:27 JST 2022]
+情報: Server number:         9.0.10.0 [火 9月 20 18:46:27 JST 2022]
+情報: OS Name:               Windows 10 [火 9月 20 18:46:27 JST 2022]
+情報: OS Version:            10.0 [火 9月 20 18:46:27 JST 2022]
+情報: Architecture:          amd64 [火 9月 20 18:46:27 JST 2022]
+情報: Java Home:             C:\pleiades\java\10 [火 9月 20 18:46:27 JST 2022]
+情報: JVM Version:           10.0.1+10 [火 9月 20 18:46:27 JST 2022]
+情報: JVM Vendor:            "Oracle Corporation" [火 9月 20 18:46:27 JST 2022]
+情報: CATALINA_BASE:         C:\LetsEngineer\curriculum\.metadata\.plugins\org.eclipse.wst.server.core\tmp0 [火 9月 20 18:46:27 JST 2022]
+情報: CATALINA_HOME:         C:\pleiades\tomcat\9 [火 9月 20 18:46:27 JST 2022]
+情報: Command line argument: -Dcatalina.base=C:\LetsEngineer\curriculum\.metadata\.plugins\org.eclipse.wst.server.core\tmp0 [火 9月 20 18:46:27 JST 2022]
+情報: Command line argument: -Dcatalina.home=C:\pleiades\tomcat\9 [火 9月 20 18:46:27 JST 2022]
+情報: Command line argument: -Dwtp.deploy=C:\LetsEngineer\curriculum\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps [火 9月 20 18:46:27 JST 2022]
+情報: Command line argument: -Dfile.encoding=UTF-8 [火 9月 20 18:46:27 JST 2022]
+情報: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\pleiades\java\10\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/pleiades/eclipse/jre/bin/../jre/bin/server;C:/pleiades/eclipse/jre/bin/../jre/bin;C:/pleiades/eclipse/jre/bin/../jre/lib/amd64;C:\Program Files\Common Files\Oracle\Java\javapath;C:\eteam\java\jdk-11\bin;C:\Program Files\AdoptOpenJDK\jdk-11.0.9.101-hotspot\bin;C:\Program Files\Microsoft Office 15\AdoptOpenJDK\jdk-11.0.8.10-hotspot\bin;C:\WINDOWS\System32;C:\WINDOWS;C:\WINDOWS\System32\wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Zulu\zulu-11\bin\;C:\Program Files\PostgreSQL\13\bin;C:\Program Files\nodejs\;C:\Program Files\TortoiseSVN\bin;C:\eteam\PostgreSQL\11\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Nodist\bin;C:\WINDOWS\system32;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.2\bin;C:\Program Files\Git\cmd;C:\Users\tsuzumi_yuka\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Salesforce CLI\bin;C:\Program Files\PostgreSQL\13\bin;C:\Users\tsuzumi_yuka\AppData\Roaming\npm;C:\Users\tsuzumi_yuka\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\tsuzumi_yuka\.dotnet\tools;C:\Program Files\IBM\Cloud\bin;C:\Users\tsuzumi_yuka\AppData\Local\GitHubDesktop\bin;C:\Users\tsuzumi_yuka\AppData\Local\Box\Box Edit\;C:\pleiades\eclipse;;.] [火 9月 20 18:46:27 JST 2022]
+情報: Initializing ProtocolHandler ["http-nio-8080"] [火 9月 20 18:46:27 JST 2022]
+情報: Using a shared selector for servlet write/read [火 9月 20 18:46:27 JST 2022]
+情報: Initializing ProtocolHandler ["ajp-nio-8009"] [火 9月 20 18:46:27 JST 2022]
+情報: Using a shared selector for servlet write/read [火 9月 20 18:46:27 JST 2022]
+情報: Initialization processed in 758 ms [火 9月 20 18:46:27 JST 2022]
+情報: サービス [Catalina] を起動します [火 9月 20 18:46:28 JST 2022]
+情報: Starting Servlet Engine: Apache Tomcat/9.0.10 [火 9月 20 18:46:28 JST 2022]
+情報: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. [火 9月 20 18:46:28 JST 2022]
+警告: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [149] milliseconds. [火 9月 20 18:46:28 JST 2022]
+情報: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. [火 9月 20 18:46:28 JST 2022]
+情報: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time. [火 9月 20 18:46:28 JST 2022]
+情報: Starting ProtocolHandler ["http-nio-8080"] [火 9月 20 18:46:28 JST 2022]
+情報: Starting ProtocolHandler ["ajp-nio-8009"] [火 9月 20 18:46:28 JST 2022]
+情報: Server startup in 944 ms [火 9月 20 18:46:28 JST 2022]
+[MEMORY:57051832][2022/09/20 06:46:29.459] [org.apache.jsp.login_jsp] [_jspService] [167] セッションあり
+[MEMORY:57051832][2022/09/20 06:46:29.460] [org.apache.jsp.login_jsp] [_jspService] [188] message = 
+[MEMORY:57586968][2022/09/20 06:46:38.943] [controller.BaseServlet] [<init>] [56] START
+[MEMORY:57586968][2022/09/20 06:46:38.950] [controller.BaseServlet] [<init>] [60] END
+[MEMORY:57586968][2022/09/20 06:46:38.961] [controller.EmployeeManagementController] [doPost] [100] START
+[MEMORY:57586968][2022/09/20 06:46:38.963] [controller.EmployeeManagementController] [getRequestType] [199] START
+[MEMORY:57586968][2022/09/20 06:46:38.964] [controller.EmployeeManagementController] [getRequestType] [202] requestTypeName = login
+[MEMORY:57586968][2022/09/20 06:46:38.965] [controller.EmployeeManagementController] [getRequestType] [221] this.responseBean = bean.ResponseBean@458f395c
+[MEMORY:57586968][2022/09/20 06:46:38.965] [controller.EmployeeManagementController] [getRequestType] [231] END
+[MEMORY:57586968][2022/09/20 06:46:38.966] [controller.EmployeeManagementController] [doPost] [128] RequestType = LOGIN
+[MEMORY:57586968][2022/09/20 06:46:38.967] [service.BaseService] [<init>] [40] START
+[MEMORY:57586968][2022/09/20 06:46:38.967] [service.BaseService] [<init>] [47] END
+[MEMORY:57586968][2022/09/20 06:46:38.968] [controller.EmployeeManagementController] [lambda$1] [145] reqEmpId = 01520
+[MEMORY:57586968][2022/09/20 06:46:38.968] [controller.EmployeeManagementController] [doPost] [150] --- ログイン ---
+[MEMORY:57586968][2022/09/20 06:46:38.969] [controller.BaseServlet] [validateLogin] [137] START
+[MEMORY:57586968][2022/09/20 06:46:38.973] [service.EmployeeManagementService] [getEmployeeData] [53] START
+[MEMORY:57586968][2022/09/20 06:46:38.973] [service.EmployeeManagementService] [executeDBAccess] [70] START
+[MEMORY:57586968][2022/09/20 06:46:38.973] [service.EmployeeManagementService] [executeDBAccess] [71] ExecuteCase = FIND_BY_EMPID
+[MEMORY:57586968][2022/09/20 06:46:38.973] [service.BaseService] [executeGetConnection] [54] START
+[MEMORY:16878504][2022/09/20 06:46:39.360] [service.BaseService] [executeGetConnection] [80] END
+[MEMORY:16878504][2022/09/20 06:46:39.360] [service.EmployeeManagementService] [executeSelectQuery] [175] START
+[MEMORY:17307240][2022/09/20 06:46:39.387] [service.EmployeeManagementService] [executeSelectQuery] [210] pEmployeeBeanList[0].empId = 01520
+■ 例外発生: [org.postgresql.core.v3.QueryExecutorImpl] [receiveErrorResponse] [2676]
+[MEMORY:18362008][2022/09/20 06:46:39.441] [service.EmployeeManagementService] [executeDBAccess] [129] reqStatus  = 2
+[MEMORY:18362008][2022/09/20 06:46:39.441] [service.EmployeeManagementService] [executeDBAccess] [130] reqMessage = SQL関連の例外です！&#010;preparedStatementやresultSetの使い方に誤りが無いか確認しましょう！
+[MEMORY:18362008][2022/09/20 06:46:39.442] [service.BaseService] [executeCloseSQL] [118] START
+[MEMORY:18362008][2022/09/20 06:46:39.443] [service.BaseService] [executeCloseSQL] [129] END
+■ 例外発生: [service.EmployeeManagementService] [executeDBAccess] [158]
+[MEMORY:18362008][2022/09/20 06:46:39.444] [controller.BaseServlet] [validateLogin] [197] isLoginError = true
+[MEMORY:18362008][2022/09/20 06:46:39.444] [controller.BaseServlet] [validateLogin] [199] END
+[MEMORY:18362008][2022/09/20 06:46:39.445] [controller.EmployeeManagementController] [doPost] [165] reqStatus  = 2
+[MEMORY:18362008][2022/09/20 06:46:39.445] [controller.EmployeeManagementController] [doPost] [166] reqMessage = SQL関連の例外です！&#010;preparedStatementやresultSetの使い方に誤りが無いか確認しましょう！
+[MEMORY:18362008][2022/09/20 06:46:39.445] [controller.EmployeeManagementController] [doPost] [175] 遷移先 = null
+[MEMORY:18362008][2022/09/20 06:46:39.445] [controller.EmployeeManagementController] [doPost] [188] END
+[MEMORY:19593392][2022/09/20 06:46:39.451] [org.apache.jsp.login_jsp] [_jspService] [167] セッションあり
+[MEMORY:19593392][2022/09/20 06:46:39.451] [org.apache.jsp.login_jsp] [_jspService] [188] message = SQL関連の例外です！&#010;preparedStatementやresultSetの使い方に誤りが無いか確認しましょう！

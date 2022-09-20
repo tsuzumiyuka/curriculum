@@ -1,7 +1,6 @@
 package service;
 
 
-import java.sql.PreparedStatement;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -75,6 +74,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
         // 右辺になんの型が入るかは指定されていない（<>で型の指定が出来るのに無い）
         List<EmployeeBean> empResultList = new ArrayList<>(0);
 
+
         try {
             // FIXME Step-5-2: executeGetConnection()内を修正
             // MEMO: Windowsは【control】、Macは【command】を押下しながらクリックすることでメソッド定義へジャンプ可能
@@ -114,7 +114,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
                 //setEmplyeeBeanListメソッドを使えるデータ型にしないといけない→empResultListに合う型を用意する
                 //76行目にて何の型を持ってインスタンス化するかが書かれていないので、
                 //データ型の指示をつけてインスタンス化し直す
-                empResultList = new ArrayList<EmployeeBean>();
+                empResultList = new ArrayList<EmployeeBean>(0);
 
                 empResultList.add(employeeBean);
 
@@ -216,7 +216,8 @@ public final class EmployeeManagementService extends BaseService implements Empl
                     // 2. 1で作成したオブジェクトをpreparedStatementへ格納
                     // Tips: sbQueryは、sbQuery.toString()でStringへ変換
                     // [ここへ記述]
-                    PreparedStatement preparedStatement = this.connection.prepareStatement(sbQuery.toString());
+                    //PreparedStatement preparedStatement = this.connection.prepareStatement(sbQuery.toString());
+                    preparedStatement = connection.prepareStatement(sbQuery.toString());
 
                     // LIKEを使用するため、パラメータを編集
                     final String empId = ExecuteCase.FIND_BY_EMPID_WITH_LIKE.equals(eCase)

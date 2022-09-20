@@ -150,8 +150,10 @@ public abstract class BaseServlet extends HttpServlet {
             // Tips1: 社員情報管理サービスはインスタンスが生成済みのものを利用すること
             // Tips2: 完全一致検索の社員情報取得を呼び出すこと
             // Tips3: 第二引数の渡し方に注意すること
+        	// 入力情報とDB情報が合致したものを取ってきたい（間違っていたらログインできない）
         	// ResponseBean型の値を、EmployeeBean型の変数に渡す
-        	responseBean = ems.getEmployeeData(ExecuteCase.FIND_BY_EMPID, resEmployeeBean);
+        	EmployeeBean employeeBean = new EmployeeBean(reqEmpId);
+        	responseBean = ems.getEmployeeData(ExecuteCase.FIND_BY_EMPID, employeeBean);
 
             // 最初の1件を取得__
             // レスポンスビーンクラスの社員情報データを取ってくるメソッド
