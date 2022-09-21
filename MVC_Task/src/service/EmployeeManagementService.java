@@ -72,7 +72,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
 
         // jsp側での余計な判定回避ため、nullの可能性を潰す（初期化）
         // 右辺になんの型が入るかは指定されていない（<>で型の指定が出来るのに無い）
-        List<EmployeeBean> empResultList = new ArrayList<>(0);
+        List<EmployeeBean> empResultList = new ArrayList<>();
 
 
         try {
@@ -114,7 +114,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
                 //setEmplyeeBeanListメソッドを使えるデータ型にしないといけない→empResultListに合う型を用意する
                 //76行目にて何の型を持ってインスタンス化するかが書かれていないので、
                 //データ型の指示をつけてインスタンス化し直す
-                empResultList = new ArrayList<EmployeeBean>(0);
+                empResultList = new ArrayList<EmployeeBean>();
 
                 empResultList.add(employeeBean);
 
