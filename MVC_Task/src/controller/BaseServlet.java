@@ -39,7 +39,10 @@ public abstract class BaseServlet extends HttpServlet {
     /** ・リクエスト対象（リクエスト&レスポンスを渡す先）のjspファイル */
     protected static final String CONST_DESTINATION_LOGIN_JSP = "/MVC_Task/login.jsp";
     // FIXME Step-3-2: 実行結果表示用のjspファイルのパスを記述しなさい。
-    protected static final String CONST_DESTINATION_RESULT_JSP = "/MVC_Task/employeeResult.jsp";
+    // 文字列の連結を行ってる可能性、ID・パスワード入力後に画面が切り替わるタイミングでURLが追加される可能性
+    // リダイレクト（直にURLに返す・外部にも飛ばせる）と成功したときの違い（レスポンス（URLに付け足す））で挙動が違う可能性有（要調査）
+    // リダイレクトとディスパッチャー（外部に飛ばせるか否かの違い・後者は既にあるURLに連結する形）
+    protected static final String CONST_DESTINATION_RESULT_JSP = "/employeeResult.jsp";
 
     /* フィールド変数の定義 */
     /** フォーワード先 */
@@ -152,8 +155,12 @@ public abstract class BaseServlet extends HttpServlet {
             // Tips3: 第二引数の渡し方に注意すること
         	// 入力情報とDB情報が合致したものを取ってきたい（間違っていたらログインできない）
         	// ResponseBean型の値を、EmployeeBean型の変数に渡す
-        	//EmployeeBean employeeBean = new EmployeeBean(reqEmpId);
+        	// 1パターン（成功）
         	responseBean = ems.getEmployeeData(ExecuteCase.FIND_BY_EMPID, resEmployeeBean);
+
+        	// 2パターン（SQL例外発生）
+        	//EmployeeBean employeeBean = new EmployeeBean(reqEmpId);
+        	//responseBean = ems.getEmployeeData(ExecuteCase.FIND_BY_EMPID, employeeBean);
 
             // 最初の1件を取得__
             // レスポンスビーンクラスの社員情報データを取ってくるメソッド
@@ -191,6 +198,7 @@ public abstract class BaseServlet extends HttpServlet {
             if (Objects.isNull(this.destinationTarget)) {
                 isLoginError = true;
                 // リダイレクトで返すため、セッション情報にレスポンス情報をセットする
+                // request.setAttribute("属性名", インスタンス);
                 session.setAttribute(CONST_REQUST_KEY_FOR_RESPONSE_BEAN, this.responseBean);
             }
         }

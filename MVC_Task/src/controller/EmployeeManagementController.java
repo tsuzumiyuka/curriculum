@@ -170,6 +170,7 @@ public final class EmployeeManagementController extends BaseServlet {
             // Tips2: キー名は「CONST_REQUST_KEY_FOR_RESPONSE_BEAN」使用
             // [ここへ記述]
             //request.getAttribute(CONST_REQUST_KEY_FOR_RESPONSE_BEAN);
+            //（スコープのオブジェクト）.setAttribute("データ名",データ)
             request.setAttribute(CONST_REQUST_KEY_FOR_RESPONSE_BEAN, this.responseBean);
 
             Logger.log(new Throwable(), "遷移先 = " + this.destinationTarget);
