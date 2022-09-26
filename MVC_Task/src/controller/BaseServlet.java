@@ -37,11 +37,13 @@ public abstract class BaseServlet extends HttpServlet {
     protected static final String CONST_REQUST_KEY_FOR_RESPONSE_BEAN = "responseBean";
 
     /** ・リクエスト対象（リクエスト&レスポンスを渡す先）のjspファイル */
+    //リダイレクトを使用する場合、サーブレットコンテナは、レスポンスをクライアントに送る前に、相対的なURLを絶対的なURLに変える必要がある。
     protected static final String CONST_DESTINATION_LOGIN_JSP = "/MVC_Task/login.jsp";
     // FIXME Step-3-2: 実行結果表示用のjspファイルのパスを記述しなさい。
     // 文字列の連結を行ってる可能性、ID・パスワード入力後に画面が切り替わるタイミングでURLが追加される可能性
     // リダイレクト（直にURLに返す・外部にも飛ばせる）と成功したときの違い（レスポンス（URLに付け足す））で挙動が違う可能性有（要調査）
     // リダイレクトとディスパッチャー（外部に飛ばせるか否かの違い・後者は既にあるURLに連結する形）
+    //	request dispatcheを使用する場合、JSPは相対パスで指定する。サーブレットが属するWebアプリケーションのパスを基準とする。
     protected static final String CONST_DESTINATION_RESULT_JSP = "/employeeResult.jsp";
 
     /* フィールド変数の定義 */
