@@ -169,18 +169,17 @@ public abstract class BaseServlet extends HttpServlet {
             // .findFirst().orElse(null)：findFirstで最初の要素を取得して、値が格納されている場合はその値を返し、
             //	格納されていない場合は引数のnullを返す
             resEmployeeBean = responseBean.getEmplyeeBeanList().stream().findFirst().orElse(null);
-        	}
 
-            if(resEmployeeBean.getEmpId() != reqEmpId) {
-            	resEmployeeBean = null;
-            }
+        		if(!(resEmployeeBean.getEmpId()).equals(reqEmpId)) {
+        			resEmployeeBean = null;
+        		}
+        	}
 
 
 
             if (Objects.nonNull(resEmployeeBean)) {
                 // パスワードチェック
                 final String hashPassword = PasswordHashUtil.getSafetyPassword(reqPassword, reqEmpId);
-                System.out.println(reqPassword);
                 if (resEmployeeBean.getPassword().equals(hashPassword)) {
                     // ログイン成功
                     this.destinationTarget = CONST_DESTINATION_RESULT_JSP;
