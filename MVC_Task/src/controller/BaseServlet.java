@@ -148,7 +148,7 @@ public abstract class BaseServlet extends HttpServlet {
         boolean isLoginError = false;
 
         final String reqEmpId = request.getParameter("empId").trim();
-        final String reqPassword = request.getParameter("password").trim();
+        final String reqPassword = request.getParameter("password");
 
         try {
             // FIXME Step-3-3: 社員情報管理サービスより、社員情報を取得する処理を呼び出しなさい。
@@ -158,11 +158,10 @@ public abstract class BaseServlet extends HttpServlet {
         	// 入力情報とDB情報が合致したものを取ってきたい（間違っていたらログインできない）
         	// ResponseBean型の値を、EmployeeBean型の変数に渡す
         	// 1パターン（成功）
+        	if(reqEmpId.isEmpty()) {
+        		resEmployeeBean = null;
+        	} else {
         	responseBean = ems.getEmployeeData(ExecuteCase.FIND_BY_EMPID, resEmployeeBean);
-
-        	// 2パターン（SQL例外発生）
-        	//EmployeeBean employeeBean = new EmployeeBean(reqEmpId);
-        	//responseBean = ems.getEmployeeData(ExecuteCase.FIND_BY_EMPID, employeeBean);
 
             // 最初の1件を取得__
             // レスポンスビーンクラスの社員情報データを取ってくるメソッド
@@ -170,11 +169,18 @@ public abstract class BaseServlet extends HttpServlet {
             // .findFirst().orElse(null)：findFirstで最初の要素を取得して、値が格納されている場合はその値を返し、
             //	格納されていない場合は引数のnullを返す
             resEmployeeBean = responseBean.getEmplyeeBeanList().stream().findFirst().orElse(null);
+        	}
+
+            if(resEmployeeBean.getEmpId() != reqEmpId) {
+            	resEmployeeBean = null;
+            }
+
 
 
             if (Objects.nonNull(resEmployeeBean)) {
                 // パスワードチェック
                 final String hashPassword = PasswordHashUtil.getSafetyPassword(reqPassword, reqEmpId);
+                System.out.println(reqPassword);
                 if (resEmployeeBean.getPassword().equals(hashPassword)) {
                     // ログイン成功
                     this.destinationTarget = CONST_DESTINATION_RESULT_JSP;

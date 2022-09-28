@@ -138,6 +138,7 @@ public final class EmployeeManagementService extends BaseService implements Empl
                     EmployeeBean employeeBean = empResultList.stream().findFirst().orElse(null);
                     final int count = Objects.isNull(employeeBean) ? 0 : empResultList.size();
                     this.reqMessage = String.format(ConstMessage.SUCCECSS_RECORD_COUNT, count);
+
                     employeeBean = null;
                     break;
                 default:
@@ -159,6 +160,11 @@ public final class EmployeeManagementService extends BaseService implements Empl
         }
 
         Logger.logEnd(new Throwable());
+
+//      if(employeeBean.getEmpId() != reqEmpId) {
+//    		this.responseBean = null;
+//      }
+
         return this.responseBean;
     }
 
@@ -204,7 +210,6 @@ public final class EmployeeManagementService extends BaseService implements Empl
             	for (int i= 0; 1 > i; i++) {
             		emp = pEmployeeBeanList.get(i);
             	}
-
 
                 if (Objects.nonNull(emp)) {
                     Logger.log(new Throwable(), "pEmployeeBeanList[0].empId = " + emp.getEmpId());

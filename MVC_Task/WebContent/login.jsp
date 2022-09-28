@@ -99,11 +99,11 @@
             <div class="div-input-flex-area">
                 <div>
                     <label>社員番号　: </label>
-                    <input id="empId" type="text" name="empId" maxlength="5" value="<%=empId%>"><br>
+                    <input id="empId" type="text" name="empId" maxlength="5" value=""><br>
                 </div>
                 <div>
                     <label>パスワード: </label>
-                    <input id="password" type="password" name="password"><br>
+                    <input id="password" type="password" name="password" value=""><br>
                 </div>
             </div>
             <div class="div-button-area">
