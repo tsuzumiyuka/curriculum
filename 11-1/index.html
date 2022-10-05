@@ -45,22 +45,19 @@
     <script>
          //①onchangeで使用されている関数の中身を実装してください。
          function changeLang(){
-            if(document.getElementById('sentakushi')){
                 let id = document.getElementById('sentakushi').value;
                 if(id =='select1'){
-                    document.getElementsById('japanese').style.display = "block";
-                    document.getElementById('english').style.display = "none";
+                    japanese.style.display = "block";
+                    english.style.display = "none";
                 
                 }else if(id =='select2'){
-                    document.getElementById('japanese').style.display = "none";
-                    document.getElementById('english').style.display = "block";
+                    japanese.style.display = "none";
+                    english.style.display = "block";
                 
                 }else if(id =='select0' || id =='select3'){
-                    document.getElementById('japanese').style.display = "block";
-                    document.getElementById('english').style.display = "block";
+                    japanese.style.display = "block";
+                    english.style.display = "block";
                 }
-            window.onload = changeLang;
-            }
         }
     </script>
 </body>
