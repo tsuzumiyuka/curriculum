@@ -19,49 +19,49 @@
 <body>
     <div>
     <select id="sentakushi" onchange="changeLang()">
-        <option id="select">選択してください</option>
-        <option id="selected_jpn">日本語</option>
-        <option id="selected_en">English</option>
-        <option id="selected_all">全て表示</option>
+        <option id="select" value="select0">選択してください</option>
+        <option id="selected_jpn" value="select1">日本語</option>
+        <option id="selected_en" value="select2">English</option>
+        <option id="selected_all" value="select3">全て表示</option>
     </select>
     </div>
     <table>
-        <tbody id="japanese">
-            <tr>
+            <tr id="japanese">
                 <th>日本</th>
                 <td>こんにちは</td>
                 <td>ありがとう</td>
                 <td>さようなら</td>
             </tr>
-        </tbody>
-        <tbody id="english">
-            <tr>
+    </table>
+    <table>
+            <tr id="english">
                 <th>English</th>
                 <td>Hello</td>
                 <td>Thank you</td>
                 <td>Good Bye</td>
             </tr>
-        </tbody>
     </table>
 
     <script>
          //①onchangeで使用されている関数の中身を実装してください。
          function changeLang(){
-            let id = document.getElementById('sentakushi').value;
-                if(id =='selected_jpn'){
-                    document.getElementById('japanese').style.display = "";
+            if(document.getElementById('sentakushi')){
+                let id = document.getElementById('sentakushi').value;
+                if(id =='select1'){
+                    document.getElementsById('japanese').style.display = "block";
                     document.getElementById('english').style.display = "none";
                 
-                }else if(id =='selected_en'){
+                }else if(id =='select2'){
                     document.getElementById('japanese').style.display = "none";
-                    document.getElementById('english').style.display = "";
+                    document.getElementById('english').style.display = "block";
                 
-                }else if(id =='selected_all'){
-                    document.getElementById('japanese').style.display = "";
-                    document.getElementById('english').style.display = "";
+                }else if(id =='select0' || id =='select3'){
+                    document.getElementById('japanese').style.display = "block";
+                    document.getElementById('english').style.display = "block";
                 }
             window.onload = changeLang;
             }
+        }
     </script>
 </body>
 </html>
